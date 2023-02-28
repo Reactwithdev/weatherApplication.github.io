@@ -39,7 +39,7 @@ function Weather() {
 
     <div className="col-md-12">
       <div className="wetherBg">
-        <h1 className="heading">Check_Weather</h1>
+        <h1 className="heading">Live_Weather</h1>
         <div className="d-grid gap-3 col-4 mt4">
           <form onSubmit={handleSearch}>
           <input type="text"
