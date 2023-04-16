@@ -48,17 +48,24 @@ function Weather() {
           <h1 className="heading">Live_Weather</h1>
           <div className="d-grid gap-3 col-4 mt4">
             <form onSubmit={handleSearch}>
-              <input type="text"
-                className="form-control"
-                placeholder="Enter Any City Name "
-                name="inputCity"
-                value={inputCity}
-                onChange={handleChangeInput} />
-              {
-                hide ? <button className="btn btn-primary "
-                  type="submit" >Search</button> : null
-              }
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter Any City Name"
+                  name="inputCity"
+                  value={inputCity}
+                  onChange={handleChangeInput}
+                  style={{ marginRight: "10px" }}
+                />
+                {hide ? (
+                  <button className="btn btn-primary" type="submit">
+                    Search
+                  </button>
+                ) : null}
+              </div>
             </form>
+
           </div>
         </div>
         <div className="col-md-12 text-center mt-5 ">
